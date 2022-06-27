@@ -3,22 +3,11 @@ import { Link } from 'react-router-dom';
 export default function Navbar() {
   return (
     <nav className='navbar'>
-      <div className='nav-center'>
+        <div className='page-logo'>
         <Link to='/'>
-          <img src={"https://cdn.mos.cms.futurecdn.net/5StAbRHLA4ZdyzQZVivm2c-970-80.jpg.webp"} alt='Walmart' className='logo' />
+        <img className="PageLogo-img" src="https://cdn.corporate.walmart.com/12/9d/06ecf3584e91acccc37162f09714/logowhite.svg" alt="Walmart Homepage" height="28" />
         </Link>
-        <ul className='nav-links'>
-          <li>
-            <Link to='/'>home</Link>
-          </li>
-          <li>
-            <Link to='/profile'>Profile</Link>
-          </li>
-          <li>
-            <Link to='/signout'>signout</Link>
-          </li>
-        </ul>
-      </div>
+        </div>
     </nav>
   )
 }
